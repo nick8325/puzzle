@@ -18,7 +18,7 @@ pretty :: Bool -> Term -> Doc
 pretty _ (Var x) = text x
 pretty False (t :@: u) = hang (pretty False t) 2 (pretty True u)
 pretty False t@Lam{} =
-  text ("\\" ++ unwords (args t) ++ ".") <> pretty False (body t)
+  text ("\\" ++ unwords (args t) ++ "->") <> pretty False (body t)
   where
     args (Lam x t) = x:args t
     args _ = []
@@ -45,7 +45,7 @@ readTerm = atomic +++ nonatomic
     lam = do
       token (char '\\')
       ids <- many1 id
-      token (string ".")
+      token (string "->")
       body <- readTerm
       return (foldr Lam body ids)
     app = do
