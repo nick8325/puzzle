@@ -9,22 +9,9 @@ data Term
   = Term :@: Term
   | Var String
   | Lam String Term
-    -- Extra terms for successor and constant integers.
-  | Succ | Num Integer
   deriving Eq
 
 infixl 7 :@:
-
--- Normalise a term in a clever way?
-normalise :: Term -> Term
-normalise t = error "not implemented"
-
--- Evaluate a Church numeral.
-evaluateChurch :: Term -> Integer
-evaluateChurch t =
-  case normalise (t :@: Succ :@: Num 0) of
-    Num n -> n
-    _ -> error "term did not reduce to value"
 
 -- Pretty-printing.
 pretty :: Bool -> Term -> Doc
