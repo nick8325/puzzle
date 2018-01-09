@@ -1,10 +1,10 @@
 Help Koen evaluate his Church numerals!
 
-In Lambda.hs you can find a parser and pretty-printer for lambda
-calculus terms, as well as the test cases.
-
-The files testcase1..testcase5 contain all the test cases.
-
-The file 'challenge' contains the challenge problem.
+This repository contains the following files, which may help you:
+  * testcase1..testcase5: the individual test cases.
+  * challenge: the challenge problem.
+  * Lambda.hs: a parser and pretty-printer for lambda calculus terms.
+  * Terms.hs: the test cases and challenge problem as Haskell expressions.
+  * Strings.hs: the test cases and challenge problem as Haskell strings.
 
 Good luck!

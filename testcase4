@@ -1,0 +1,101 @@
+    \ o n ->
+      (\ c b -> c (c b))
+        (\ m l ->
+           (\ c b -> c (c b))
+             (\ k j ->
+                (\ c b -> c (c b))
+                  (\ i h ->
+                     (\ c b -> c (c b))
+                       (\ g f ->
+                          (\ c b -> c (c b)) (\ e d -> (\ c b -> c (c b)) (\ b -> b) e ((\ c b -> c (c b)) (\ b -> b) e (e d))) g
+                            ((\ c b -> c (c b)) (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) g
+                               ((\ c b -> c (c b)) (\ b -> b) g (g f))))
+                       i
+                       ((\ c b -> c (c b))
+                          (\ f -> (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) f (f d)))
+                          i
+                          ((\ c b -> c (c b)) (\ b -> b) i (i h))))
+                  k
+                  ((\ c b -> c (c b))
+                     (\ g f ->
+                        (\ c b -> c (c b)) (\ e d -> (\ c b -> c (c b)) (\ b -> b) e ((\ c b -> c (c b)) (\ b -> b) e (e d))) g
+                          ((\ c b -> c (c b)) (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) g
+                             ((\ c b -> c (c b)) (\ b -> b) g (g f))))
+                     k
+                     (k j)))
+             m
+             ((\ c b -> c (c b))
+                (\ j i ->
+                   (\ c b -> c (c b))
+                     (\ h g ->
+                        (\ c b -> c (c b))
+                          (\ f -> (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) f (f d)))
+                          h
+                          ((\ c b -> c (c b)) (\ b -> b) h (h g)))
+                     j
+                     ((\ f -> (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) f (f d)))
+                        ((\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) j (j d)))
+                        i))
+                m
+                ((\ c b -> c (c b))
+                   (\ h g ->
+                      (\ c b -> c (c b))
+                        (\ f -> (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) f (f d)))
+                        h
+                        ((\ c b -> c (c b)) (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) h
+                           ((\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) h (h d)) g)))
+                   m
+                   ((\ c b -> c (c b)) (\ g f -> (\ c b -> c (c b)) (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) g (g f)) m
+                      ((\ c b -> c (c b)) (\ b -> b) m (m l))))))
+        o
+        ((\ c b -> c (c b))
+           (\ k j ->
+              (\ i h ->
+                 (\ c b -> c (c b))
+                   (\ g ->
+                      (\ f -> (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) f (f d)))
+                        ((\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) g (g d))))
+                   i
+                   ((\ c b -> c (c b))
+                      (\ f -> (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) f (f d)))
+                      i
+                      ((\ c b -> c (c b)) (\ b -> b) i ((\ c b -> c (c b)) (\ b -> b) i (i h)))))
+                (\ h ->
+                   (\ c b -> c (c b))
+                     (\ g ->
+                        (\ f -> (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) f (f d)))
+                          ((\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) g (g d))))
+                     k
+                     ((\ c b -> c (c b))
+                        (\ f -> (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) f (f d)))
+                        k
+                        ((\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) k (k d)) h)))
+                ((\ f -> (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) f (f d)))
+                   ((\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) k (k d)))
+                   j))
+           o
+           ((\ c b -> c (c b))
+              (\ j i ->
+                 (\ c b -> c (c b))
+                   (\ h g ->
+                      (\ c b -> c (c b))
+                        (\ f -> (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) f (f d)))
+                        h
+                        ((\ c b -> c (c b)) (\ b -> b) h ((\ c b -> c (c b)) (\ b -> b) h (h g))))
+                   j
+                   ((\ c b -> c (c b))
+                      (\ f -> (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) f (f d)))
+                      j
+                      ((\ c b -> c (c b)) (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) j ((\ c b -> c (c b)) (\ b -> b) j (j i)))))
+              o
+              ((\ c b -> c (c b))
+                 (\ h g ->
+                    (\ c b -> c (c b))
+                      (\ f -> (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) (\ d -> (\ c b -> c (c b)) (\ b -> b) f (f d)))
+                      h
+                      ((\ c b -> c (c b)) (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) h
+                         ((\ c b -> c (c b)) (\ b -> b) h ((\ c b -> c (c b)) (\ b -> b) h (h g)))))
+                 o
+                 ((\ c b -> c (c b)) (\ g f -> (\ c b -> c (c b)) (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) g (g f)) o
+                    ((\ c b -> c (c b)) (\ e d -> (\ c b -> c (c b)) (\ b -> b) e (e d)) o
+                       ((\ c b -> c (c b)) (\ b -> b) o ((\ c b -> c (c b)) (\ b -> b) o (o n))))))))

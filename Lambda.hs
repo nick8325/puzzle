@@ -69,8 +69,3 @@ readTerm = atomic +++ nonatomic
     id = token (munch1 isLower)
     token p = do { skipSpaces; p }
     bracketed p = between (token (char '(')) (token (char ')')) p
-
-main = sequence_ [ print (evaluateChurch x)
-                 | x <- tests ]
-
-tests = []
